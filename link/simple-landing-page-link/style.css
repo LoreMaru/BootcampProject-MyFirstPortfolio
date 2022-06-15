@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #1a4688;
+  font-family: "Roboto", sans-serif;
+}
+
+.main_header {
+  display: flex;
+  justify-content: center;
+  height: 180px;
+}
+.main_header img {
+  transform: scale(0.9);
+}
+
+.main_navbar {
+  display: flex;
+  justify-content: end;
+  background-color: #7fb5e6;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.main_navbar a {
+  padding-right: 20px;
+  font-size: larger;
+  font-weight: 800;
+  text-shadow: 0 0 1px rgb(206, 208, 214);
+  text-decoration: none;
+  color: #1a4688;
+}
+
+.main_navbar a:hover {
+  text-shadow: 0 0 15px rgb(244, 250, 249);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero img {
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgb(206, 208, 214);
+}
+
+.main_content {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.main_content .first,
+.second {
+  width: 30%;
+  padding: 20px;
+  text-align: justify;
+  border-left: 2px ridge #7fb4e657;
+}
+
+.main_gallery {
+  margin: 20px;
+}
+
+.main_gallery h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+}
+
+.card img {
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgb(206, 208, 214);
+  filter: grayscale(100%);
+  transition: all 0.35s;
+}
+
+.card img:hover {
+  filter: contrast(150%);
+  transform: scale(1.2);
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgb(206, 208, 214);
+}
+
+.contact-us {
+  margin: 60px 10%;
+  text-align: center;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 250px;
+}
+.main_footer {
+  display: flex;
+  padding: 15px;
+  background-color: #7fb5e6;
+  color: #1a4688;
+  justify-content: center;
+}
+
+.emoji:hover {
+  transform: scale(2);
+  transition: all 0.35s;
+}
